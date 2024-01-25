@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bug report </title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="gamesrn-body">
+    <!-- <header class="sticky-top">
+        <nav class="navbar navbar-light navbar-expand-lg header">
+            <div class="container-fluid">
+              
+                <div class="d-flex">
+                    <button class="navbar-toggler" type="button">
+                       
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </button>
+            
+                      <a class="navbar-brand d-flex w-50" href="#">
+                        <img src="images/user-logo.svg" alt="Gameplay" class="me-2 logo-img" />
+                        <div>
+                            <p class="mb-0 navuser-text "> Naz-afarin </p>
+                            <p class="mb-0 navuser-text">21 <b>F</b></p>
+                        </div>
+                        
+                      </a>
+                </div> 
+
+                <ul class="nav right-nav d-flex">
+                    <li class="nav-item ">
+                        <button class="btn " data-bs-toggle="modal" data-bs-target="#locationstatus"> <img src="images/flags/ad.svg" alt="Gameplay" class="right-img" />UK (EN) </button>
+                    </li>
+                    <li class="nav-item  dropdown ">
+                        <button class="btn " type="button" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/navigation/profile.svg" alt="Gameplay" class="right-img" /> Profile
+                        </button>
+                        <ul class="dropdown-menu content-font" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item prf-menu-bg" href="#"> <img src="images/nav-prf-setting.svg" /> Profile Setting</a></li>
+                            <li><a class="dropdown-item" href="#"> <img src="images/nav-game-setting.svg" /> Game Setting</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#licensesetpopup"> <img src="images/nav-license-setting.svg" /> License Setting</a></li>
+                            <li><a class="dropdown-item" href="#"> <img src="images/nav-logout.svg" /> Logout</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>   
+    </header> -->
+
+    <div class="clearfix"> </div>
+
+    <main class="gamesrn-body-main">
+
+        <div class="container-fluid">
+
+            <!-- top section start -->
+            <div class="row pt-3">
+
+                <!-- top section start -->
+                <!-- top left start -->
+                <div class="col-lg-9"> 
+                    <section class="">
+                        <div class="section-background">
+                            <div class="left-userinfo-outer section-bg-btm pb-2 mb-2">
+                                <div class="user-col">
+                                    <a class="d-flex text-decoration-none text-white content-medium-font align-items-center" href="#">
+                                        <img src="images/webapp/user-name.svg" alt="Gameplay" class="me-2 logo-img" />
+                                        <div>
+                                            <p class="mb-0 navuser-text text-light-blue"> You Are </p>
+                                            <p class="mb-0 navuser-text">Isabel <br>Jaramillo</p>
+                                        </div> 
+                                    </a>
+                                </div>
+                                <div class="user-info-col content-font">
+                                    <div class="d-flex">
+                                        <div class="gender-col">
+                                            <p class="mb-0 text-light-blue">Gender</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="">Female</label>
+                                        </div> 
+                                    </div>
+                                    <div class="d-flex ">
+                                        <div class=" gender-col">
+                                            <p class="mb-0 text-light-blue">Age</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="">21</label>
+                                        </div> 
+                                    </div>
+                                    <div class="d-flex ">
+                                        <div class="gender-col">
+                                            <p class="mb-0 text-light-blue">Language</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="">Spanish</label>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="religion-col content-medium-font">
+                                    <p class="mb-0 text-light-blue">Religion</p>
+                                    <label>Protestant</label>
+                                </div>
+                                <div class="location-col content-medium-font">
+                                    <p class="mb-0 text-light-blue">Location</p>
+                                    <label>Vicuna, Coquimbo, <br> CHILE</label>
+                                </div>
+                                
+                                <div class="family-info-col">
+                                    <div class="d-flex gap-2 justify-content-end"> 
+                                        <div class="family-grp-img" data-bs-toggle="modal" data-bs-target="#familypopup"> 
+                                            <button class="btn family-grp-holder text-white content-font family-image-center">
+                                                
+                                                <div class="d-flex flex-column">
+                                                    <img src="images/family-group/male-icon.svg" alt="Gameplay" class="aged-icon">
+                                                    <p class="mb-0"> <label> 35 </label> </p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <img src="images/family-group/girl-icon.svg" alt="Gameplay" class="child-icon">
+                                                    <p class="mb-0"> <label> 5 </label> </p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <img src="images/family-group/boy-icon.svg" alt="Gameplay" class="child-icon">
+                                                    <p class="mb-0"> <label> 2 </label> </p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <img src="images/family-group/female-icon.svg" alt="Gameplay" class="aged-icon">
+                                                    <p class="mb-0"> <label> 30 </label> </p>
+                                                </div> 
+                                            </button> 
+                                            
+                                        </div>
+                                        <div class="content-medium-font leftmarging-minus">
+                                            <div><span class="text-light-blue ">M</span> <span>20</span></div>
+                                            <div><span class="text-pink ">F</span> <span style="padding-left: 4px;">20</span></div>
+                                         </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="d-flex justify-content-between content-font">
+                                <div class="progress-box" data-bs-toggle="modal" data-bs-target="#healthpopup">
+                                    <p class="mb-0 blue-title">Health</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/health.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Endurance</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Endurance.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Happiness</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Happiness.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Intelligence</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">46%</p>
+                                        <img src="images/webapp/Intelligence.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Artistic</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Artistic.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Musical</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Musical.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Athletic</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">36%</p>
+                                        <img src="images/webapp/Athletic.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Strength</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Strength.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Endurance</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">26%</p>
+                                        <img src="images/webapp/Endurance1.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Spiritual</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">76%</p>
+                                        <img src="images/webapp/Spiritual.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <p class="mb-0 blue-title">Wisdom</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">16%</p>
+                                        <img src="images/webapp/Wisdom.svg" class="progress-icon" />
+                                    </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+
+                    </section> 
+                </div>
+                <!-- top left end --> 
+                 
+                <!-- top right side start --> 
+                <div class="col-lg-3"> 
+                    <section class=""> 
+                        <div class="d-flex justify-content-between">
+                            <div class="flag-holder">
+                                <img src="images/flags/ad.svg" alt="" class="img img-fluid" />
+                            </div>
+                            <div class="logo-holder">
+                                <img src="images/r-logo-big.svg" alt="" class="img img-fluid" />
+                                <div class="userinfo-holder text-end content-font">
+                                    <!-- <p class="mb-0">Logged in as</p> -->
+                                    <label class="fw-medium ">shekharsurve</label>
+                                </div>
+                                <div class="d-flex justify-content-between screen-seticon mt-2">
+                                    <button><i class="fas fa-chevron-left"></i></button>
+                                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                                    <button data-bs-toggle="modal" data-bs-target="#settingspopup"><i class="fa-solid fa-gear"></i></button>
+                                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="born-summary mt-2"> 
+                            <button class="btn border-0 btn-style righttop-btn bg-blue text-white " style="background-color: #002f3e !important;" data-bs-toggle="modal" data-bs-target="#bornsummerypop"> Born Summary </button>
+                            <a href="bug-report.html" class="btn border-0 btn-style righttop-btn bg-blue text-white " style="background-color: #002f3e !important;">Bug Report</a>
+                            <a href="feedback.html" class="btn border-0 btn-style righttop-btn bg-blue text-white " style="background-color: #002f3e !important;">Feedback</a>
+                        </div> 
+                    </section>  
+                </div> 
+                <!-- top right side end --> 
+
+                <!-- top section end -->  
+            </div>
+            <!-- top section end -->
+
+             <!-- middle section start -->
+             <section class=" mt-2">
+                <div class="col-lg-12 col-md-12">
+                    <div class="midsec-bgouter p-2">
+                        <div class="mainpage-sechead">
+                            <p class="mb-0"> BUG REPORT </p>
+                        </div>
+                        <div class="midsec-contentouter midsec-contentouter-scroll scrollbar-2 mt-3">
+                            <div class="">
+                                <p class="content-medium-font">
+                                    Did you face any issue while playing the game? If 'yes', then please describe the issue in space given below.
+                                </p>
+                                <textarea class="form-control content-medium-font" placeholder="What do you think or feel about this" id="aboutTextarea" rows="10"></textarea>
+                                <div class="text-center mt-3">
+                                    <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 w-25 py-2"> Save </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </section>
+            <!-- middle section end -->
+
+            <!-- footer start -->
+            <footer> 
+                <div class="obituary-footerholder">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <nav class="bottom-nav obituary-footerouter">
+                                <div  class="footer-icon">
+                                    <div  class="footer-icon" style="margin-bottom: 0px;">
+                                        <a href="#"> 
+                                            <img src="images/dead_btn.png" alt="Gameplay" class="svg-image" style="width: 126px;" />
+                                            <span class="footer-icon-text-btn" style="top: 35px;">Darrian <br> Pharoh </span>
+                                            <span class="footer-icon-text" style="top: 75px;"> See your <br> life </span>
+                                        </a>
+                                    </div> 
+                                </div> 
+                                
+                                <div class="bottom-nav-item ">  
+                                    <div class="bottom-nav-link ">
+                                        <a href="obituary.html" class="btn p-0 bottom-nav-link-btn" type="button" >
+                                            <p class="mb-0 content-font text-white">At Birth</p>
+                                            <div class="leftfooter-btn text-black">
+                                                <div class="leftfooter-btnholder">
+                                                    <p class="mb-1 content-font">Middle <br> Income</p>
+                                                    <p class="mb-0 leftfooter-countno">54</p>
+                                                </div> 
+                                            </div> 
+                                        </a>  
+                                    </div>
+                                </div> 
+                                <div class="bottom-nav-item ">
+                                    
+                                </div>
+                                <div class="bottom-nav-item ">  
+                                    <div class="bottom-nav-link ">
+                                        <a href="obituary.html" class="btn p-0 bottom-nav-link-btn" type="button" >
+                                            <p class="mb-0 content-font text-white">At Death</p>
+                                            <div class="leftfooter-btn text-black">
+                                                <div class="leftfooter-btnholder">
+                                                    <p class="mb-1 content-font">Middle <br> Income</p>
+                                                    <p class="mb-0 leftfooter-countno">54</p>
+                                                </div> 
+                                            </div> 
+                                        </a>  
+                                    </div>
+                                </div> 
+                                
+                            </nav>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <nav class="bottom-nav obituary-footerouter"> 
+                                
+                                <div class="bottom-nav-item ">  
+                                    <div class="bottom-nav-link ">
+                                        <a href="obituary.html" class="btn p-0 bottom-nav-link-btn" type="button" >
+                                            <img src="images/icons/obituary-icon.svg" alt="" /> 
+                                            <p class="mb-0">Obituary</p>
+                                        </a>  
+                                    </div>
+                                </div>
+                
+                                <div class="bottom-nav-item "> 
+                                    <div class="bottom-nav-link " >
+                                        <a href="summery.html" class="btn p-0 bottom-nav-link-btn" type="button" >
+                                            <img src="images/icons/game-summary-icon.svg" alt="" />
+                                            <p class="mb-0">Summary</p>
+                                        </a>  
+                                    </div>
+                                </div>
+        
+                                <div class="bottom-nav-item">  
+                                    <div class="bottom-nav-link " >
+                                        <a href="write-letter.html" class="btn p-0 bottom-nav-link-btn" type="button" >
+                                            <img src="images/icons/write-a-letter-icon.svg" alt="" />
+                                            <p class="mb-0">Write a letter</p>
+                                        </a>  
+                                    </div> 
+                                </div> 
+        
+                                <div class="bottom-nav-item">  
+                                    <div class="bottom-nav-link " >
+                                        <a href="life-book.html" class="btn p-0 bottom-nav-link-btn" type="button">
+                                            <img src="images/icons/lifebook-icon.svg" alt="" />
+                                            <p class="mb-0">Life book</p>
+                                        </a>  
+                                    </div>
+                                </div>
+        
+                                <div class="bottom-nav-item ">  
+                                    <div class="bottom-nav-link " >
+                                        <a href="life-data.html" class="btn p-0 bottom-nav-link-btn" type="button">
+                                            <img src="images/icons/lifedata-icon.svg" alt="" />
+                                            <p class="mb-0">Life data</p>
+                                        </a>  
+                                    </div>
+                                </div>
+        
+                                <!-- <div class="bottom-nav-item"> 
+                                    <div class="bottom-nav-link " >
+                                        <a href="a02-gamescreen.html" class="btn p-0 bottom-nav-link-btn" type="button">
+                                            <img src="images/icons/live-a-life-icon.svg" alt="" />
+                                            <p class="mb-0">Live A Life</p>
+                                        </button>  
+                                    </div>
+                                </div> -->
+
+                                <div class="bottom-nav-item"> 
+                                    <div class="obituary-livebtn-holder" >
+                                        <a href="a02-gamescreen.html" class="btn p-0 bottom-nav-link-btn" type="button">
+                                            <img src="images/livebutton-circle.svg" alt="" class="obituary-livebtnimg" /> 
+                                        </a> 
+                                    </div>
+                                </div>
+
+                            </nav>
+                        </div>
+                    </div> 
+
+                </div> 
+            </footer>
+            <!-- footer end -->
+
+        </div>
+        
+        <!-- born summery popup start --> 
+        <div class="modal fade popup-modal-bg" id="bornsummerypop" tabindex="-1" aria-labelledby="bornsummerypopModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+                <div class="modal-content"> 
+                    <div class="modal-header align-items-center justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body text-white scrollbar-hidden">
+                        
+                        <section class="container mt-3">
+
+                            <div class="separator-border text-center pb-2 mb-2">
+                                <p class="modal-title text-blue fontheading text-center d-inline" > Born summary </p>
+                                <div class="text-end " style="margin-top: -30px;">
+                                    <span><i class="fa-solid fa-paper-plane me-3"></i></span>
+                                    <span><i class="fas fa-share-alt"></i></span>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center normal-font scrollbar-2">
+
+                                <p class="fontheading">Unfortunately, you died during birth!</p>
+                                <p class="box-title-font">Devastating Stillbirth Facts (2021)</p>
+                                <p>1.9 million stillbirths worldwide - babies born lifeless at or after 28 weeks.</p>
+                                <p>Better care could have prevented many.</p>
+                                <p>Global stillbirth rate: 13.9 per 1,000 births.</p>
+                                <p>1 in 72 babies lost to stillbirth.</p>
+                                <p>Heartbreaking: One every 17 seconds.</p>
+                                <p>Underreporting may hide the true extent. Let's raise awareness and take action.</p>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- born summery popup end -->
+
+        <!-- settings popup start -->
+        <div class="modal fade popup-modal-bg" id="settingspopup" tabindex="-1" aria-labelledby="settingspopupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen ">
+                <div class="modal-content popup-window">
+                    <div class="modal-header">
+                        <h5 class="modal-title fontheading"> <i class="fa-solid fa-gear"></i> SETTING </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+    
+                    <div class="modal-body text-white scrollbar-2">
+                        
+                        <section class="">
+    
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 career-popup-outer mt-3">
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Conscience  </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+    
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+                                                  </ul>
+                                            </div> 
+                                        </div>                                          
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Family and sexuality </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Govt / Human Rights </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Natural disasters </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Country and culture </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 8
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 9
+                                                      </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Crime and abuse </p>
+                                        </div>
+                                        <div class="scrollbar-2 ">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 8
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 9
+                                                      </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Health Status </p>
+                                        </div>
+                                        <div class="scrollbar-2 ">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 4
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 5
+                                                    </li>
+    
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 6
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 7
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 8
+                                                      </li>
+    
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 9
+                                                      </li>
+                                                      <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                        demo 10
+                                                      </li>
+                                                  </ul>
+                                            </div>
+                                        </div>                                          
+                                    </div> 
+                                </div>
+    
+                                <div class="col">
+                                    <div class="settings-listbox-outer box-shadow ">
+                                        <div class="settings-listboxhead box-gloss">
+                                            <p class="mb-0 "> <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Vices </p>
+                                        </div>
+                                        <div class="scrollbar-2">
+                                            <div class="career-contentbox">
+                                                <ul class="list-group list-group-flush settings-listbox normal-font1">
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 1
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 2
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                      demo 3
+                                                    </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                              
+                            </div>
+                            <div class="leisure-btn-holder mt-4 text-center">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 py-2">Save</button>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- settings popup end -->
+
+        <!-- left side content all popup start -->
+
+        <!-- family popup start -->
+        <div class="modal fade popup-modal-bg" id="familypopup" tabindex="-1" aria-labelledby="familypopupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+                <div class="modal-content popup-window">
+                    <div class="modal-header">
+                        <h5 class="modal-title content-font1" id="educationModalLabel"> <img src="images/001-career-popup/1.svg" class="headingimage" alt=""/> FAMILY </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+
+                    <div class="modal-body text-white scrollbar-hidden"> 
+                        
+                        <div class="row">
+
+                            <div class="col-9">
+
+                                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center"> 
+                                    <div class="col">
+                                        <div class="text-center family-content-box">
+                                            <p class="mb-0 family-content-box-title">Income / month</p>
+                                            <p class="mb-0 family-content-box-text">5,324.11(USD)</p>
+                                            <p class="mb-0 family-content-box-text">123,908(INR)</p>
+                                        </div> 
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="text-center family-content-box">
+                                            <p class="mb-0 family-content-box-title">Expenses / month</p>
+                                            <p class="mb-0 family-content-box-text">5,324.11(USD)</p>
+                                            <p class="mb-0 family-content-box-text">123,908(INR)</p>
+                                        </div> 
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="text-center family-content-box">
+                                            <p class="mb-0 family-content-box-title">Networth</p>
+                                            <p class="mb-0 family-content-box-text">5,324.11(USD)</p>
+                                            <p class="mb-0 family-content-box-text">123,908(INR)</p>
+                                        </div> 
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="text-center family-content-box bg-gray">
+                                            <p class="mb-0 family-content-box-title">Language</p>
+                                            <p class="mb-0 family-content-box-text">American English</p> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="text-center family-content-box bg-gray">
+                                            <p class="mb-0 family-content-box-title">Religion</p>
+                                            <p class="mb-0 family-content-box-text">Christianity</p> 
+                                        </div> 
+                                    </div> 
+                                </div>
+                                
+                                <div class="familypopup-midbox-outer scrollbar-2">
+                                    <div class="row gy-3 "> 
+                                        <div class="section-title">
+                                            <p class="mb-1">Your Family</p>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-female-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="family-contentbox-outer content-font box-shadow">
+                                                <div class="family-box-topheading">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 me-1"> <img src="images/be-born/male-icon.svg" /> </p>
+                                                        <p class="mb-0">Tommy <br> Montgomery </p>
+                                                    </div> 
+                                                    <p class="mb-0 "> (Family member)</p> 
+                                                </div>
+                                                <div class="family-male-box-title">
+                                                    <p class="mb-0 "> Me </p>
+                                                    <p class="mb-0 "> 18 Years Old</p> 
+                                                </div>
+                                                <div class="family-contentbox-holder"> 
+                                                    <div class="family-contentbox-midcontent">
+                                                        <p><span>Job:</span> No Job</p> 
+                                                        <p><span>Health Problems:</span> None</p>
+                                                        <p><span>Health Status: </span> 92</p>
+                                                        <p><span> Income:</span> 4500 INR</p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div> 
+
+                                <div class="row">
+                                    <div class="family-bottombox-outer content-font box-shadow">
+                                        <div class="family-bottombox-head-outer text-center">
+                                            <div class="col-6">
+                                                <p class="mb-0">Yearly household income comparison in US $</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="mb-0">Income distribution in Eritrea</p>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center family-bottom-contentbox-outer">
+                                            <div class="col-6 text-center">
+                                                <div class="family-bottombox-graphholder">
+                                                    <img src="images/graph.svg" alt=""/>
+                                                </div> 
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <div class="family-bottombox-tableholder">
+                                                    <table class="table table-bordered text-white mb-0">
+                                                        <thead>
+                                                          <tr>
+                                                            <th scope="col">Economic status</th>
+                                                            <th scope="col">Min income (PA)</th>
+                                                            <th scope="col">Max income (PA)</th>
+                                                            <th scope="col">Population (%)</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">Bottom 10%</th>
+                                                            <td>Less</td>
+                                                            <td>943</td>
+                                                            <td>10%</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">Barely managed</th>
+                                                            <td>943</td>
+                                                            <td>2.0 K</td>
+                                                            <td>30%</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">Middle income</th>
+                                                            <td >2.0 K</td>
+                                                            <td>9.8 K</td>
+                                                            <td>56%</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">Rich</th>
+                                                            <td >2.0 K</td>
+                                                            <td>9.8 K</td>
+                                                            <td>56%</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">Super Rich</th>
+                                                            <td >2.0 K</td>
+                                                            <td>9.8 K</td>
+                                                            <td>56%</td>
+                                                          </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-3">
+
+                                <div class="familypopup-rightlist-outer">
+                                    <div class="familypopup-diet mb-3">
+                                        <div class="familypopup-rightsec-title">
+                                            <p class="mb-1">Diet and Shelter</p>
+                                        </div>
+                                        <div class="familypopup-rightlist-holder">
+                                            <ul class="list-group list-group-flush content-font">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                   <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> Diet</p>  
+                                                   <p class="mb-0">Meager</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> Home</p>  
+                                                   <p class="mb-0">Temporary</p>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="familypopup-amenities">
+                                        <div class="familypopup-rightsec-title">
+                                            <p class="mb-1">Amenities</p>
+                                        </div>
+                                        <div class="familypopup-rightlist-holder">
+                                            <ul class="list-group list-group-flush content-font">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                   <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> COMPUTERS</p>  
+                                                   <p class="mb-0">0</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> REFRIGERATORS</p>  
+                                                   <p class="mb-0">0</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> SAFE WATER</p>  
+                                                   <p class="mb-0">X</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> PUBLIC SANITATION</p>  
+                                                   <p class="mb-0">X</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> MEDICAL CARE</p>  
+                                                   <p class="mb-0">X</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> TELEVISIONS</p>  
+                                                   <p class="mb-0">0</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> RADIOS</p>  
+                                                   <p class="mb-0">1</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> TELEPHONES</p>  
+                                                   <p class="mb-0">0</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> CELLPHONES</p>  
+                                                   <p class="mb-0">1</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> CARS</p>  
+                                                   <p class="mb-0">0</p>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0"><img src="images/webapp/footer-Residence.svg" /> INTERNET</p>  
+                                                   <p class="mb-0">X</p>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                        </div> 
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- family popup end --> 
+
+        <!-- left side content all popup end -->
+
+        <!-- health popup start -->
+        <div class="modal fade popup-modal-bg" id="healthpopup" tabindex="-1" aria-labelledby="healthpopupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen ">
+                <div class="modal-content popup-window">
+                    <div class="modal-header">
+                        <h5 class="modal-title fontheading"> <img src="images/webapp/health.svg" class="headingimage" alt=""/> INDICATORS OVER AGE </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+
+                    <div class="modal-body text-white">
+                        
+                        <section class="">
+
+                            <div class="">
+                                <div class="d-flex justify-content-between normal-font mb-4">
+                                    <div class="progress-box" data-bs-toggle="modal" data-bs-target="#healthpopup">
+                                        <p class="mb-0 blue-title">Health</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/health.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Endurance</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Endurance.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Happiness</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Happiness.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Intelligence</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">46%</p>
+                                            <img src="images/webapp/Intelligence.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Artistic</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Artistic.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Musical</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Musical.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Athletic</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">36%</p>
+                                            <img src="images/webapp/Athletic.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Strength</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Strength.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Endurance</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">26%</p>
+                                            <img src="images/webapp/Endurance1.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Spiritual</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">76%</p>
+                                            <img src="images/webapp/Spiritual.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress-box">
+                                        <p class="mb-0 blue-title">Wisdom</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0">16%</p>
+                                            <img src="images/webapp/Wisdom.svg" class="progress-icon" />
+                                        </div>
+                                        <div class="progress mt-2">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <div class="indicators-graphsec-outer">
+                                <div class="indicators-graphsec-title">
+                                    <p class="mb-0">Health attribute changing over age</p>
+                                </div>
+                                <div class="indicators-graphsec">
+                                    <img src="images/graphs/graph-1.svg" class="img img-fluid w-100" />
+                                </div>
+                                <div class="indicators-graphsecbtm">
+                                    <div class="overage-lifeevent-outer mt-3">
+                                        <div class="overage-lifeevent-holder">
+                                            <div class="overage-lifeevent-left">
+                                                <p class="mb-0 normal-font">Life event</p>
+                                                <p class="mb-0 normal-font fw-medium">0</p>
+                                                <p class="mb-0 normal-font">age</p>
+                                            </div>
+                                            <div class="overage-lifeevent-text">
+                                                <p>You were born dead today, a boy, in Jamaica.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- health popup end -->
+
+    </main>
+
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script>
+        function toggleFullscreen() {
+            var element = document.documentElement; 
+
+            if (document.fullscreenElement || document.webkitFullscreenElement) {
+               
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+            } else {
+                
+                if (element.requestFullscreen) {
+                    element.requestFullscreen();
+                } else if (element.webkitRequestFullscreen) {
+                    element.webkitRequestFullscreen();
+                }
+            }
+        }
+    </script> -->
+    
+
+</body>
+</html>

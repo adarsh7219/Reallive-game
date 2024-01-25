@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken ladder</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="strsrn-body">
+
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="strsrn-body-main">
+
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-between">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-sign-in"></i> </button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="text-center md-box-width m-auto">
+                    <div class=" mb-2">
+                        <p class="stcrn-headline text-blue">What is broken ladder</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="boxborder-1px p-3 mb-3">
+                        <p class="mb-0">
+                            Depending on household income and wealth, households can be divided into five (5) different economic strata, namely Bottom 10% (the lowest economic stratum), Barely managed, Middle Income, Rich and Super Rich (the highest economic stratum). The table shows the income multiple required to move up from 'Bottom 10%* (the lowest economic stratum) to various other strata of society. For example, if the value of column Middle Income is 6, it means that households from the 'Bottom 10%' economic stratum need a six fold jump in income to get into the 'Middle Income' economic stratum.
+                        </p>
+                    </div>
+
+                    <div class="d-flex gap-2 mb-3">   
+
+                        <div class="eco-rightsec width" >
+
+                            <div class="d-flex normal-font text-center text-white"> 
+        
+                                <div class="me-2 width">
+                                    <table class="table table-bordered eco-table-border eco-table-style text-white mb-0">
+                                        <thead class="text-blue">
+                                          <tr class="align-top">
+                                            <th scope="col" >Country</th>
+                                            <th scope="col" > Bottom 10% </th>
+                                            <th scope="col" class="border-right-orange" >Barely  Managed</th>
+                                            <th scope="col" class="text-orange border-orange" >Middle income</th>
+                                            <th scope="col" >Rich</th>
+                                            <th scope="col" >Super Rich</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Chile</td>
+                                            <td>1</td> 
+                                            <td class="border-right-orange" >2.97</td> 
+                                            <td class="text-orange border-orange" >3.70</td>
+                                            <td >23.81</td>
+                                            <td >357.78</td> 
+                                          </tr>
+                                          <tr>
+                                            <td>India</td>
+                                            <td>1</td> 
+                                            <td class="border-right-orange">9.64</td> 
+                                            <td class="text-orange border-orange">56.76</td> 
+                                            <td>56.76</td> 
+                                            <td>56.76</td> 
+                                          </tr> 
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="width">
+                                    <table class="table table-bordered eco-table-border eco-table-style text-white mb-0">
+                                        <thead class="text-blue">
+                                          <tr class="align-top">
+                                            <th scope="col" >Maximum Income/ Day of Bottom 10 % 
+                                            </th>
+                                            <th scope="col" >Chance of Poverty</th> 
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row">$ 6.62</td>
+                                            <td>00.59 %</td> 
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">$ 1.88</td>
+                                            <td>11.89 %</td>  
+                                          </tr> 
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="boxborder-1px p-3">
+                        <p class="mb-0">
+                            Antigua and Barbuda : To attain the status of 'Middle Income' in Antigua and Barbuda, a household in the bottom 10% would have to earn a 12.56 times increase in income.
+                        </p>
+                        <p class="mb-0">
+                            India : In India, a household in the bottom 10% would need to earn 9.64 times more income to qualify as a middle-income household.
+                        </p>
+                        <p class="mb-0">
+                            A poor Antiguan family has to work much harder to climb the economic mobility ladder since the ladder has missing step
+                        </p>
+                    </div>
+
+                </div> 
+                
+            </div>
+
+            <div class="text-center btmfixed-button mt-3">
+                <a href="compare-yearly-income-status.html" class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 w-25 py-2"> Next </a>
+            </div>
+
+        </div>
+
+    </main>
+    
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

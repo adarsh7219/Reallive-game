@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Family Amenities</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="">
+        <div class="container-fluid">
+            <div class="">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+            </div>
+
+            <div class="container">
+                <div class="text-center md-box-width m-auto mb-5">
+                    <p class="fontheading text-blue">This is what you have for your family</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6 justify-content-center gy-5">
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Computer.svg" class="me-2" />Computer</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Refrigerator.svg" class="me-2" />Refrigerator</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Water.svg" class="me-2" />Safe Water</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-red"></span> Not Available: 0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Toilet.svg" class="me-2" />Public Sanitation</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Medical.svg" class="me-2" />Medical Care</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Television.svg" class="me-2" />Televisions</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-red"></span> Not Available: 0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Computer.svg" class="me-2" />Computer</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Refrigerator.svg" class="me-2" />Refrigerator</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Water.svg" class="me-2" />Safe Water</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="amenities-holder">
+                            <div class="aminities-title">
+                                <p class="mb-0 text-blue"><img src="images/webapp/Toilet.svg" class="me-2" />Public Sanitation</p>
+                            </div>
+                            <div>
+                                <p class="mb-0"><span class="amenities-icon_badge-green"></span> Available: 1</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="text-center btmfixed-button mt-3">
+                <a href="your-family-story.html" class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 w-25 py-2"> Your family story at birth </a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

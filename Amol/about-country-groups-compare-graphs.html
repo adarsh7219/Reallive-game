@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compare country graphs </title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class=" ">
+
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-between">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-sign-in"></i> </button>
+            </div>
+
+            <div class="container-fluid ">
+    
+                <div class="stcrn-headline">
+                    <p>Data on selected indicators compared by country</p>
+                </div>
+                
+                <div class="tab-panel-outer">
+                    
+                    <div class="tab-panel-holder">
+
+                        <div class="d-flex justify-content-between align-items-center w-100 rightside-tab">
+                            <ul class="nav nav-fill nav-justified nav-tabs tabnav-btn text-white scrollbar-2 border-0 overflow-auto" id="myTab" role="tablist"> 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="active nav-link text-white" id="comparecountry1-tab" data-bs-toggle="tab" data-bs-target="#comparecountry1" type="button" role="tab" aria-controls="comparecountry" aria-selected="true"> Population </button> 
+                                </li> 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link text-white" id="comparecountry2-tab" data-bs-toggle="tab" data-bs-target="#comparecountry2" type="button" role="tab" aria-controls="comparecountry2" aria-selected="false"> SDG </button> 
+                                </li> 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link text-white" id="comparecountry3-tab" data-bs-toggle="tab" data-bs-target="#comparecountry3" type="button" role="tab" aria-controls="comparecountry3" aria-selected="false"> Income GINI </button> 
+                                </li> 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link text-white" id="comparecountry4-tab" data-bs-toggle="tab" data-bs-target="#comparecountry4" type="button" role="tab" aria-controls="comparecountry4" aria-selected="false">  Happiness </button> 
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link text-white" id="comparecountry5-tab" data-bs-toggle="tab" data-bs-target="#comparecountry5" type="button" role="tab" aria-controls="comparecountry5" aria-selected="false"> Purchashing power parity (PPP)</button> 
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link text-white" id="comparecountry6-tab" data-bs-toggle="tab" data-bs-target="#comparecountry6" type="button" role="tab" aria-controls="comparecountry6" aria-selected="false"> Human development index (HDI)</button> 
+                                </li>
+                            </ul>
+                            <div class="nav-item" role="presentation"> 
+                                <a href="about-country-groups-by-selecting-country.html" class="nav-link text-white" > <img src="images/load-life-button.svg" class=" " style="width: 120px;" /> </a> 
+                            </div>
+                        </div>
+
+                        <div class="tab-content"> 
+
+                            <!-- Population tab start -->
+                            <div class="tab-pane active" id="comparecountry1" role="tabpanel" aria-labelledby="comparecountry1-tab"> 
+    
+                                <div class="tab-content-outer">
+
+                                    <p>tab 1</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                            <!-- Population status tab end -->
+    
+                            <!-- SDG tab start -->
+                            <div class="tab-pane" id="comparecountry2" role="tabpanel" aria-labelledby="comparecountry2-tab"> 
+                                
+                                <div class="tab-content-outer ">
+
+                                    <p>tab 2</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+
+                            <!-- SDG tab end -->
+
+                            <!-- Income GINI tab start -->
+                            <div class="tab-pane" id="comparecountry3" role="tabpanel" aria-labelledby="comparecountry3-tab"> 
+                                
+                                <div class="tab-content-outer">
+                                    
+                                    <p>tab 3</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+    
+                            </div> 
+                            <!-- Income GINI tab end -->
+
+                            <!--  Happiness tab start -->
+                            <div class="tab-pane" id="comparecountry4" role="tabpanel" aria-labelledby="comparecountry4-tab"> 
+                                            
+                                <div class="tab-content-outer">
+
+                                    <p>tab 4</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <!--  Happiness tab end -->
+
+                            <!--   Purchashing power parity (PPP) tab start -->
+                            <div class="tab-pane" id="comparecountry5" role="tabpanel" aria-labelledby="comparecountry5-tab"> 
+                                            
+                                <div class="tab-content-outer">
+
+                                    <p>tab 5</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <!--   Purchashing power parity (PPP) tab end -->
+
+                            <!--   Human development index (HDI) tab start -->
+                            <div class="tab-pane" id="comparecountry6" role="tabpanel" aria-labelledby="comparecountry6-tab"> 
+                                            
+                                <div class="tab-content-outer">
+
+                                    <p>tab 6</p>
+                                    <div class="countrycompare-graph-outer">
+                                        <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <!--  Human development index (HDI) tab end -->
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

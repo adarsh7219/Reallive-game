@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country disparity data learning tool</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class=" ">
+
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-between">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-sign-in"></i> </button>
+            </div>
+
+            <div class="fontheading fw-medium text-blue text-center">
+                <p> Comparative disparities between countries Argentina and Angola </p>
+            </div>
+            <div class="infoindicators-holder">
+                <div class="d-flex justify-content-center gap-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="red-indicator"></span> <p class="mb-0"> Bad Indicators </p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="green-indicator"></span> <p class="mb-0"> Good Indicators </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel-outer">
+                    
+                <div class="tab-panel-holder">
+
+                    <div class="d-flex justify-content-center align-items-center w-100 ">
+                        <ul class="nav nav-fill nav-justified nav-tabs tabnav-btn text-white scrollbar-2 border-0 overflow-auto" id="myTab" role="tablist"> 
+                            <li class="nav-item" role="presentation"> 
+                                <button class="active nav-link text-white" id="comparecountry1-tab" data-bs-toggle="tab" data-bs-target="#comparecountry1" type="button" role="tab" aria-controls="comparecountry" aria-selected="true"> Demographics </button>
+                            </li> 
+                            <li class="nav-item" role="presentation"> 
+                                <button class="nav-link text-white" id="comparecountry2-tab" data-bs-toggle="tab" data-bs-target="#comparecountry2" type="button" role="tab" aria-controls="comparecountry2" aria-selected="false"> Per capita </button>
+                            </li> 
+                            <li class="nav-item" role="presentation"> 
+                                <button class="nav-link text-white" id="comparecountry3-tab" data-bs-toggle="tab" data-bs-target="#comparecountry3" type="button" role="tab" aria-controls="comparecountry3" aria-selected="false"> Labour force by occupation </button>
+                            </li> 
+                            <li class="nav-item" role="presentation"> 
+                                <button class="nav-link text-white" id="comparecountry4-tab" data-bs-toggle="tab" data-bs-target="#comparecountry4" type="button" role="tab" aria-controls="comparecountry4" aria-selected="false"> Index / Ranking </button>
+                            </li>
+                        </ul>
+                        <div class="nav-item" role="presentation"> 
+                            <a href="country-disparity-choose-country-to-live.html" class="nav-link text-white" > <img src="images/load-life-button.svg" class=" " style="width: 120px;" /> </a>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                        <!-- Demographics tab start -->
+                        <div class="tab-pane active" id="comparecountry1" role="tabpanel" aria-labelledby="comparecountry1-tab"> 
+
+                            <div class="tab-content-outer">
+
+                                <div class="box-title-headouter text-center tabheaderback">
+                                    <p> Demographics </p>
+                                </div>
+                                
+                                <div class="row">
+
+                                    <div class="col-lg-5 tabContentborder">
+                                        <table class="table table-borderless text-white normal-font text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th > </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Algeria</p>
+                                                        <img src="images/country-flag/1.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Albania</p>
+                                                        <img src="images/country-flag/2.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                  </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Population </button> 
+                                                    </td>
+                                                    <td> 2.8 Million (M)</td>
+                                                    <td> 2.9 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Sex ratio </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Birth rate </button>
+                                                    </td>
+                                                    <td> 25.3</td>
+                                                    <td> 13.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Death rate </button>
+                                                    </td>
+                                                    <td> 869.6 K</td>
+                                                    <td> 2.9 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Infant mortality rate </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 text-center countrycompare-graph-outer">
+                                            <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 normal-font Contentborder">
+                                            <p>
+                                                If Algeria is your home country, you will have 2.10 times more babies than Albania.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <!-- Demographics tab end -->
+
+                        <!-- Per capita tab start -->
+                        <div class="tab-pane" id="comparecountry2" role="tabpanel" aria-labelledby="comparecountry2-tab"> 
+                            
+                            <div class="tab-content-outer ">
+
+                                <div class="box-title-headouter text-center tabheaderback">
+                                    <p> Per capita </p>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-5 tabContentborder">
+                                        <table class="table table-borderless text-white normal-font text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th > </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Algeria</p>
+                                                        <img src="images/country-flag/1.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Albania</p>
+                                                        <img src="images/country-flag/2.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                  </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Primary school enrollment </button> 
+                                                    </td>
+                                                    <td> 2.8 </td>
+                                                    <td> 2.9 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Unemployment rate </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100">  Access to electricity  </button>
+                                                    </td>
+                                                    <td> 25.3</td>
+                                                    <td> 13.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Health exp. (% of GDP) </button>
+                                                    </td>
+                                                    <td> 869.6 </td>
+                                                    <td> 2.9 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 text-center countrycompare-graph-outer">
+                                            <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 normal-font Contentborder">
+                                            <p>
+                                                If Armenia is your home country, you will have 5.21 % less access to Primary School than Antigua and Barbuda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <!-- Per capita tab end -->
+
+                        <!-- Labour force by occupation tab start -->
+                        <div class="tab-pane" id="comparecountry3" role="tabpanel" aria-labelledby="comparecountry3-tab"> 
+                            
+                            <div class="tab-content-outer">
+                                
+                                <div class="box-title-headouter text-center tabheaderback">
+                                    <p> Labour force by occupation </p>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-5 tabContentborder">
+                                        <table class="table table-borderless text-white normal-font text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th > </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Algeria</p>
+                                                        <img src="images/country-flag/1.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Albania</p>
+                                                        <img src="images/country-flag/2.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                  </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a class="text-decoration-none border-0 btn-style modal-btn-text text-white mb-2 w-100 link-hover"> Agriculture sector </a> 
+                                                    </td>
+                                                    <td> 2.8 </td>
+                                                    <td> 2.9 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a class="text-decoration-none border-0 btn-style modal-btn-text text-white mb-2 w-100 link-hover"> Service sector </a> 
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a class="text-decoration-none border-0 btn-style modal-btn-text text-white mb-2 w-100 link-hover"> Industry sector </a> 
+                                                    </td>
+                                                    <td> 25.3</td>
+                                                    <td> 13.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 text-center countrycompare-graph-outer">
+                                            <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 normal-font Contentborder">
+                                            <p>
+                                                In Armenia, most likely your occupation will be in the Service Sector.
+                                                If you are working in Service Sector in Antigua and Barbuda, you will have 54.80% jobs available in Armenia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div> 
+                        <!-- Labour force by occupation tab end -->
+
+                        <!--  Index / Ranking tab start -->
+                        <div class="tab-pane" id="comparecountry4" role="tabpanel" aria-labelledby="comparecountry4-tab"> 
+                                        
+                            <div class="tab-content-outer">
+
+                                <div class="box-title-headouter text-center tabheaderback">
+                                    <p> Index / Ranking </p>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-5">
+                                        <table class="table table-borderless text-white normal-font text-center tabContentborder">
+                                            <thead>
+                                                <tr>
+                                                    <th > </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Algeria</p>
+                                                        <img src="images/country-flag/1.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="box-title-font fw-medium text-blue mb-2">Albania</p>
+                                                        <img src="images/country-flag/2.svg" class=" mb-1" style="width: 72px;" />
+                                                        <p class="small-text mb-0 fontsize10">Country you are born in Algeria</p>
+                                                    </th>
+                                                  </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Purchashing power parity (PPP) </button> 
+                                                    </td>
+                                                    <td> 2.8 </td>
+                                                    <td> 2.9 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100">  Gini </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> SDG rank </button>
+                                                    </td>
+                                                    <td> 25.3</td>
+                                                    <td> 13.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Happiness rank </button>
+                                                    </td>
+                                                    <td> 869.6 </td>
+                                                    <td> 2.9 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Human development index (HDI) </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 px-4 w-100"> Corruption rank </button>
+                                                    </td>
+                                                    <td> 1.05</td>
+                                                    <td> 1.078</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 text-center countrycompare-graph-outer">
+                                            <img src="images/graphs/graph-3.svg" class="img img-fluid" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="h-100 d-flex align-items-center justify-content-center flex-column p-3 normal-font Contentborder">
+                                            <p>
+                                                If Armenia is your home country, you will have 5.21 % less access to Primary School than Antigua and Barbuda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <!--  Index / Ranking tab end -->
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </main>
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

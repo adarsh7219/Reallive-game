@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Challenges</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="strsrn-body-main">
+        <div class="container-fluid">
+            <div class="">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+            </div>
+
+            <div class="lg-box-width m-auto">
+                <div class="text-center md-box-width m-auto">
+                    <div class=" mb-2">
+                        <p class="mb-2 fontheading text-blue">Human Geography Challenges</p>
+                        <p class="normal-font">Select a Challenge</p>
+                    </div>
+                </div>
+    
+                <div class="challenges-list-holder scrollbar-2">
+    
+                    <ul class="list-group">
+                        <li class="list-group-item ">
+                            <button class="list-btn" data-bs-toggle="modal" data-bs-target="#guesscountry">
+                                Be born in a country with the lowest infant mortality rate (IMR)
+                                <span class=""><i class="fas fa-chevron-right"></i></span>
+                            </button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn" data-bs-toggle="modal" data-bs-target="#guesscountry"> 
+                                Be born in a country with the highest infant mortality rate (IMR).
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn" data-bs-toggle="modal" data-bs-target="#guesscountry">
+                                Be born in a country with the highest life expectancy.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country that is worst affected by hunger and malnutrition.
+                                <span class=""><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country that has most doctors and nurses in healthcare services.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in the cleanest country in the world.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country where the majority of the population lives in slums.
+                                <span class=""><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country where the self-reported feeling of loneliness is high.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country that has the world's worst health conditions.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <button class="list-btn">
+                                Be born in a country where farmers use a high level of pesticides per acre.
+                                <span class=" "><i class="fas fa-chevron-right"></i></span>
+                            </button> 
+                        </li>
+                      </ul>
+                </div>
+                
+            </div> 
+
+        </div>
+    </main>
+
+    <!-- guess the country popup start -->
+    <div class="modal fade" id="guesscountry" tabindex="-1" aria-labelledby="guesscountryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md ">
+            <div class="modal-content vocquitpopup-window">
+                <div class="modal-body text-white">
+                    <div class="modal-content-font text-center">
+                        <div class="text-start">
+                            <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+                        </div>
+                        <p class="">Guess the country...</p>
+                        <input class="form-control form-control-sm w-50 m-auto finance-inputfild" type="text" placeholder="Please enter country here...">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn border-0 btn-style modal-btn-text bg-blue text-white px-4" data-bs-toggle="modal" data-bs-target="#busnsformat"> Next </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- guess the country popup end -->
+
+
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

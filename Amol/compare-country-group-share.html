@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country groups shared by</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="strsrn-body">
+
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="strsrn-body-main">
+
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-between">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-sign-in"></i> </button>
+            </div>
+
+            <div class="text-center m-auto">
+                <div class=" mb-2">
+                    <p class="stcrn-headline text-blue">Country groups shared by Armenia and Angola</p>
+                    <p class="stcrn-headline text-blue">Country group with red border means they are members of the same group or share some common attributes</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6"> 
+                    <div class="text-center boxborder-1px pt-2">
+                        <div class="countrygroup-info text-center text-dark-blue mb-3 ">
+                            <p class="fontheading fw-medium">El Salvador</p>
+                            <img src="images/select-country/india-flag.svg" class="mb-3" />
+                        </div>
+                        
+                        <div class="select-opt-outer countrygroups-btn-outer scrollbar-2">
+                            <div class=" button-group select-opt-inner normal-font gap-3">
+
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Geo Political</button>
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Evangelical Protestantism 10%</button>
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Religious</button>
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Oil, Coal & Energy</button>
+    
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6"> 
+                    <div class="text-center boxborder-1px pt-2">
+                        <div class="countrygroup-info text-center text-dark-blue mb-3 ">
+                            <p class="fontheading fw-medium">India</p>
+                            <img src="images/select-country/india-flag.svg" class="mb-3" />
+                        </div>
+                        
+                        <div class="select-opt-outer countrygroups-btn-outer scrollbar-2">
+                            <div class=" button-group select-opt-inner normal-font gap-3">
+
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Geo Political</button>
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Evangelical Protestantism 10%</button>
+                                <button class="btn link-popbtn normal-font" data-bs-toggle="modal" data-bs-target="#countryinfo">Religious</button>
+    
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center btmfixed-button mt-3">
+                <a href="compare-country-comparision-table.html" class="btn border-0 btn-style modal-btn-text bg-blue text-white mb-2 w-25 py-2"> Next </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- gountry group info Popup start -->
+    <div class="modal fade popup-modal-bg" id="countryinfo" tabindex="-1" aria-labelledby="countryinfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content popup-window">
+                <div class="modal-header">
+                    <h5 class="modal-title fontheading" id="educationModalLabel"> WHAT ARE 'LATAM' COUNTRIES </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+
+                <div class="modal-body text-white">
+                    
+                    <section class="">
+
+                        <div class="countryinfo-imgholder">
+                            <img src="images/wiki-img.svg" class="img img-fluid w-100" />
+                        </div>
+                        
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gountry group info Popup end -->
+    
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

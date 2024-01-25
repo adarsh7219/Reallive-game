@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealLives passport</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="">
+        <div class="container-fluid">
+            <div class="">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+            </div>
+
+            <div class="container">
+                <div class="text-center md-box-width m-auto mb-5">
+                    <p class="fontheading text-blue">Your visas from all the countries you were born in</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6 justify-content-center gy-3 pb-4">
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2" data-bs-toggle="modal" data-bs-target="#viewalllives"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Myanmar (Burma) Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Central African Republic Lives count : 2</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Congo, Democratic Republic Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="passport-box-inner">
+                            <div class="passport-box-head">
+                                <p class="mb-1">Your visa</p>
+                            </div>
+                            <div class="passport-box-stamp">
+                                <img src="images/select-country/country-stamp.svg" class="mb-3"/>
+                            </div>
+                            <div class="passport-box-head box-title-font">
+                                <p class="mb-0">To be born in</p>
+                            </div>
+                            <div class="passport-box-flag">
+                                <img src="images/select-country/india-flag.svg" class="mb-3" /> 
+                            </div>
+                            <div class="passport-box-content">
+                                <p>Singapore Lives count : 1</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2" data-bs-toggle="modal" data-bs-target="#viewalllives"> View all lives </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- View all lives popup start -->
+    <div class="modal fade popup-modal-bg" id="viewalllives" tabindex="-1" aria-labelledby="viewalllivesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content popup-window"> 
+                <div class="d-flex justify-content-end pe-2">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body text-white">
+
+                    <section class="">
+                    
+                        <div class="modal-content-title text-center">
+                            <p class="mb-2">List of lives from the country 'Myanmar (Burma)'</p>
+                        </div>
+                        
+                        <table class="table table-bordered text-white modal-content-font">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Age</th>
+                                  <th scope="col">Sex</th>
+                                  <th scope="col">Language</th>
+                                  <th scope="col">Created</th>
+                                  <th scope="col">Last lived</th>
+                                  <th scope="col">Status</th>
+                                  <th scope="col">Action</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Thura Aung</th>
+                                    <td>0</td>
+                                    <td>M</td>
+                                    <td>en</td>
+                                    <td>Sep 26, 2023</td>
+                                    <td>Sep 26, 2023</td>
+                                    <td>Incomplete</td>
+                                    <td>
+                                        <a href="born-info.html" class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2" > Load </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Thura Aung</th>
+                                    <td>0</td>
+                                    <td>M</td>
+                                    <td>en</td>
+                                    <td>Sep 26, 2023</td>
+                                    <td>Sep 26, 2023</td>
+                                    <td>Incomplete</td>
+                                    <td>
+                                        <a href="born-info.html" class="btn border-0 btn-style modal-btn-text bg-blue text-white py-2" > Load </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- View all lives popup end -->
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

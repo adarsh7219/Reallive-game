@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed lives</title>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+</head>
+<body class="strsrn-body">
+    
+    <header class="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <div class="d-flex justify-content-between screen-seticon mt-2">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="toggleFullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+                    <button><i class="fa-solid fa-gear"></i></button>
+                    <button><i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <div class="home-logo-holder text-center">
+                <img src="images/r-logo-big.svg" alt="Reallives" />
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"> </div>
+
+    <main class="strsrn-body-main">
+        <div class="container-fluid">
+            <div class="">
+                <button class="btn border-0 btn-style modal-btn-text text-white"> <i class="fas fa-arrow-left"></i> Back </button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="text-center md-box-width m-auto">
+                    <div class=" mb-2">
+                        <p class="stcrn-headline text-blue">To see what each completed life was like, load any of them.</p>
+                        <input class="form-control form-control-md w-75 m-auto finance-inputfild text-center" type="text" placeholder="Search a life by country name or character name...">
+                    </div>
+                </div>
+    
+                <div class="table-responsive life-diary-datatable normal-font mb-4">
+                    
+                    <table id="dataTable" class="table text-white">
+                        <thead class="text-blue">
+                          <tr>
+                            <th>Sr no</th>
+                            <th>Character name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Country name</th>
+                            <th>See your life</th>
+                            <th>Obituary</th>
+                            <th>Summary</th>
+                            <th>Write a letter</th>
+                            <th class="text-red">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Awa (en)</td>
+                            <td>0</td>
+                            <td>F</td>
+                            <td>Cambodia</td>
+                            <td>
+                              <a href="see-yourlife.html" class="text-decoration-none text-white"><i class="fas fa-angle-right"></i></a>
+                            </td>
+                            <td>
+                              <a href="obituary.html" class="text-decoration-none text-white"><i class="fas fa-angle-right"></i></a>
+                            </td>
+                            <td>
+                              <a href="summery.html" class="text-decoration-none text-white"><i class="fas fa-angle-right"></i></a>
+                            </td>
+                            <td>
+                              <a href="write-letter.html" class="text-decoration-none text-white"><i class="fas fa-angle-right"></i></a>
+                            </td>
+                            <td class="">
+                              <a href="life-data1.html" class="text-decoration-none text-red"><i class="fas fa-angle-right"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="js/custom.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('#dataTable').DataTable({
+            searching: false, // Hide search input
+            paging: true, // Enable pagination
+            sorting: true, // Enable sorting
+            "scrollY": "400px", // Set tbody height
+            "scrollCollapse": true, // Allow tbody to collapse if needed
+
+            "language": {
+                "paginate": {
+                "previous": '<i class="fas fa-chevron-left"></i>',
+                "next": '<i class="fas fa-chevron-right"></i>'
+                }
+            },
+
+            "dom": '<"top d-flex justify-content-between"l<"float-end"p>>rt<"clear">' // Pagination and sorting on top
+          });
+        });
+    </script>
+
+</body>
+</html>
